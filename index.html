@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <style>
+            html{background-color: gainsboro}
+            .k{margin-left: 200px}
+            h1{font-size:105px;margin-left: 200px}
+            p{margin-top: 35px;}
+            .a1{height: 50px;width: 200px;text-decoration: none;color: white;font-size: 15px;position: absolute;bottom:20px;}
+            .a3{background-image:url(velikiy_chelovek.jpg);height: 60px;width: 60px;background-repeat: no-repeat;border-radius: 50px;background-size: cover}
+            .a4{background-image:url(3.png);height: 60px;width: 60px;background-repeat: no-repeat;border-radius: 50px;background-size: cover}
+            .a5{background-image:url(4.png);height: 60px;width: 60px;background-repeat: no-repeat;border-radius: 50px;background-size: cover}
+            .a6{background-image:url(5.png);height: 60px;width: 60px;background-repeat: no-repeat;border-radius: 50px;background-size: cover}
+            .a7{background-image:url(6.jpg);height: 260px;width: 660px;background-repeat: no-repeat;background-size: cover}
+            #panel {
+    position: fixed; /* положение */
+    top: 100px; /* отступ сверху */
+    left: 0; /* отступ слева */
+    background: white; /* цвет фона */
+    width: 80px; /* ширина блока */
+    height: 1180px; /* высота блока */
+    font: 14px Arial; /* размер и тип шрифта */
+    color: white; /* цвет текста */
+    text-align: center; /* выравнивание текста по центру */
+    padding: 5px; /* отступы от границ внутри блока */
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    }
+
+/* СКРЫТЫЙ БЛОК */
+#hidden_panel {
+    position: fixed; /* положение */
+    top: 100px; /* отступ сверху */
+    left: -220px; /* отступ слева */
+    background: lavender; /* цвет фона */
+    color: white; /* цвет текста */
+    width: 200px; /* ширина блока */
+    height: 1180px; /* высота блока */
+    padding: 10px; /* отступы от границ внутри блока */
+    text-align: left; 
+     background: green;/* выравнивание текста */
+    display: block;
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    }
+#panel:hover {
+    left: 220px; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+}
+#panel:hover #hidden_panel {
+    left: 0; /* отступ слева */
+}
+            .a1{
+                color: green;
+            }
+            a{
+                margin-left: 45px;
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+                margin-top: 135px;
+            }
+        </style>
+    </head>
+   <body>
+        
+    <div class="a">
+        </div>
+       <div id="panel"> 
+        <div class="a3"></div>
+        <div class="a4"></div>
+        <div class="a5"></div>
+        <div class="a6"></div>
+    <div id="hidden_panel">
+        
+        <p class="a1">Главная</p>
+        <a></a>
+        <a href="index.html">Главная</a>
+        <br>
+        <a href="index2.html">Мой профиль</a>
+        <br>
+        <a>Найти друзей</a>
+        
+    </div>
+</div>
+       <div class="k">
+       <h1>Social link</h1>
+      
+       <h2>Новый формат для общения</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+       <div class="a7"></div>
+       </div>
+    </body>
+</html>
